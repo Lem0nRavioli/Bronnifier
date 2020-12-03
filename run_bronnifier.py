@@ -104,7 +104,6 @@ class Ui_MainWindow(object):
         return qImg
 
     def update_display(self):
-        print(self.x_offset)
         bronnify.id_save_her(self.path, "temp_bronn.jpg", self.faces, self.x_offset, self.y_offset)
         self.pic.setPixmap(QtGui.QPixmap("temp_bronn.jpg"))
 
